@@ -72,7 +72,7 @@
     
     Movie *movie = _movies[indexPath.row];
     [cell.textLabel setText:movie.movietitle];
-    cell.imageView.image = [UIImage imageNamed:@"tomato_whole_red_1.png"];
+    cell.imageView.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://lh6.googleusercontent.com/-oGXZqWKUybs/TurAWkINd9I/AAAAAAAAALU/dkYzlHhjpPo/w800-h800/600px-Soccer_ball.svg%255B1%255D.png"]]];
     
     return cell;
 }

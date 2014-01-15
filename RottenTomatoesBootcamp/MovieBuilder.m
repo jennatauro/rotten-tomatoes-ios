@@ -27,12 +27,9 @@
     NSArray *results = [parsedObject valueForKey:@"movies"];
     //NSLog(@"Count %ld", results.count);
     
-    //could be something wrong in here with the parsing
-    
     for (NSDictionary *movieDic in results) {
         Movie *movie = [[Movie alloc] init];
         
-        //WHAT DOES THIS DO?
         
         [movie setMovietitle:[movieDic objectForKey:@"title"]];
         [movies addObject:movie];
