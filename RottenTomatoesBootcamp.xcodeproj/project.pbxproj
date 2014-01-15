@@ -22,6 +22,12 @@
 		6D8F360318859D4D00C8AD4C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D8F35E218859D4D00C8AD4C /* UIKit.framework */; };
 		6D8F360B18859D4D00C8AD4C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6D8F360918859D4D00C8AD4C /* InfoPlist.strings */; };
 		6D8F360D18859D4D00C8AD4C /* RottenTomatoesBootcampTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8F360C18859D4D00C8AD4C /* RottenTomatoesBootcampTests.m */; };
+		6D8F36181885CBC400C8AD4C /* DetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8F36171885CBC400C8AD4C /* DetailCell.m */; };
+		6D8F361B1885D5F800C8AD4C /* Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8F361A1885D5F800C8AD4C /* Movie.m */; };
+		6D8F361F1885D6B300C8AD4C /* RottenCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8F361E1885D6B300C8AD4C /* RottenCommunicator.m */; };
+		6D8F36221885DFA600C8AD4C /* MovieBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8F36211885DFA600C8AD4C /* MovieBuilder.m */; };
+		6D8F36261885E9C100C8AD4C /* RottenManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8F36251885E9C100C8AD4C /* RottenManager.m */; };
+		6D8F36281886F0C100C8AD4C /* tomato_whole_red_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D8F36271886F0C100C8AD4C /* tomato_whole_red_1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +62,19 @@
 		6D8F360818859D4D00C8AD4C /* RottenTomatoesBootcampTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RottenTomatoesBootcampTests-Info.plist"; sourceTree = "<group>"; };
 		6D8F360A18859D4D00C8AD4C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6D8F360C18859D4D00C8AD4C /* RottenTomatoesBootcampTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RottenTomatoesBootcampTests.m; sourceTree = "<group>"; };
+		6D8F36161885CBC400C8AD4C /* DetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailCell.h; sourceTree = "<group>"; };
+		6D8F36171885CBC400C8AD4C /* DetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailCell.m; sourceTree = "<group>"; };
+		6D8F36191885D5F800C8AD4C /* Movie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Movie.h; sourceTree = "<group>"; };
+		6D8F361A1885D5F800C8AD4C /* Movie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Movie.m; sourceTree = "<group>"; };
+		6D8F361C1885D63F00C8AD4C /* RottenCommunicatorDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RottenCommunicatorDelegate.h; sourceTree = "<group>"; };
+		6D8F361D1885D6B300C8AD4C /* RottenCommunicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RottenCommunicator.h; sourceTree = "<group>"; };
+		6D8F361E1885D6B300C8AD4C /* RottenCommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RottenCommunicator.m; sourceTree = "<group>"; };
+		6D8F36201885DFA600C8AD4C /* MovieBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieBuilder.h; sourceTree = "<group>"; };
+		6D8F36211885DFA600C8AD4C /* MovieBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieBuilder.m; sourceTree = "<group>"; };
+		6D8F36231885E97800C8AD4C /* RottenManagerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RottenManagerDelegate.h; sourceTree = "<group>"; };
+		6D8F36241885E9C100C8AD4C /* RottenManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RottenManager.h; sourceTree = "<group>"; };
+		6D8F36251885E9C100C8AD4C /* RottenManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RottenManager.m; sourceTree = "<group>"; };
+		6D8F36271886F0C100C8AD4C /* tomato_whole_red_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tomato_whole_red_1.png; path = "../../../AndroidStudioProjects/RottenTomatoesApplication/app/src/main/res/drawable-hdpi/tomato_whole_red_1.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,11 +134,24 @@
 		6D8F35E418859D4D00C8AD4C /* RottenTomatoesBootcamp */ = {
 			isa = PBXGroup;
 			children = (
+				6D8F36271886F0C100C8AD4C /* tomato_whole_red_1.png */,
 				6D8F35ED18859D4D00C8AD4C /* AppDelegate.h */,
 				6D8F35EE18859D4D00C8AD4C /* AppDelegate.m */,
 				6D8F35F018859D4D00C8AD4C /* Main.storyboard */,
+				6D8F36191885D5F800C8AD4C /* Movie.h */,
+				6D8F361A1885D5F800C8AD4C /* Movie.m */,
+				6D8F361C1885D63F00C8AD4C /* RottenCommunicatorDelegate.h */,
+				6D8F36231885E97800C8AD4C /* RottenManagerDelegate.h */,
+				6D8F36241885E9C100C8AD4C /* RottenManager.h */,
+				6D8F36251885E9C100C8AD4C /* RottenManager.m */,
+				6D8F361D1885D6B300C8AD4C /* RottenCommunicator.h */,
+				6D8F36201885DFA600C8AD4C /* MovieBuilder.h */,
+				6D8F36211885DFA600C8AD4C /* MovieBuilder.m */,
+				6D8F361E1885D6B300C8AD4C /* RottenCommunicator.m */,
 				6D8F35F318859D4D00C8AD4C /* MasterViewController.h */,
 				6D8F35F418859D4D00C8AD4C /* MasterViewController.m */,
+				6D8F36161885CBC400C8AD4C /* DetailCell.h */,
+				6D8F36171885CBC400C8AD4C /* DetailCell.m */,
 				6D8F35F618859D4D00C8AD4C /* DetailViewController.h */,
 				6D8F35F718859D4D00C8AD4C /* DetailViewController.m */,
 				6D8F35F918859D4D00C8AD4C /* Images.xcassets */,
@@ -234,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D8F35FA18859D4D00C8AD4C /* Images.xcassets in Resources */,
+				6D8F36281886F0C100C8AD4C /* tomato_whole_red_1.png in Resources */,
 				6D8F35E918859D4D00C8AD4C /* InfoPlist.strings in Resources */,
 				6D8F35F218859D4D00C8AD4C /* Main.storyboard in Resources */,
 			);
@@ -254,10 +287,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D8F36221885DFA600C8AD4C /* MovieBuilder.m in Sources */,
+				6D8F361B1885D5F800C8AD4C /* Movie.m in Sources */,
 				6D8F35EF18859D4D00C8AD4C /* AppDelegate.m in Sources */,
+				6D8F36181885CBC400C8AD4C /* DetailCell.m in Sources */,
 				6D8F35F518859D4D00C8AD4C /* MasterViewController.m in Sources */,
 				6D8F35EB18859D4D00C8AD4C /* main.m in Sources */,
 				6D8F35F818859D4D00C8AD4C /* DetailViewController.m in Sources */,
+				6D8F361F1885D6B300C8AD4C /* RottenCommunicator.m in Sources */,
+				6D8F36261885E9C100C8AD4C /* RottenManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,6 +504,7 @@
 				6D8F361218859D4D00C8AD4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6D8F361318859D4D00C8AD4C /* Build configuration list for PBXNativeTarget "RottenTomatoesBootcampTests" */ = {
 			isa = XCConfigurationList;
@@ -474,6 +513,7 @@
 				6D8F361518859D4D00C8AD4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

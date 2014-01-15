@@ -1,5 +1,5 @@
 //
-//  MasterViewController.h
+//  DetailCell.h
 //  RottenTomatoesBootcamp
 //
 //  Created by Jenna Tauro on 1/14/2014.
@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "RottenManagerDelegate.h"
 
-@interface MasterViewController : UITableViewController<RottenManagerDelegate>
-
+@interface DetailCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *movienameLabel;
 @end
