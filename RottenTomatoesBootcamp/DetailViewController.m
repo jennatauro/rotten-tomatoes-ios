@@ -8,6 +8,10 @@
 
 #import "DetailViewController.h"
 
+#import "Movie.h"
+#import "RottenManager.h"
+#import "RottenCommunicator.h"
+
 @interface DetailViewController ()
 - (void)configureView;
 @end
@@ -39,6 +43,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    //self.navigationItem.title = @"Movie Title Goes Here";
+    
     [self configureView];
 }
 

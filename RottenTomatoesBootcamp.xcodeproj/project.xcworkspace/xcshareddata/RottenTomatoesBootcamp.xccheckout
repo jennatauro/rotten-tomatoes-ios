@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>10336D2B-5468-45F8-BD48-095250B5EBD4</string>
+	<key>IDESourceControlProjectName</key>
+	<string>RottenTomatoesBootcamp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>8FC4F327-09CA-44DD-A5A0-2F081CBBFACA</key>
+		<string>https://github.com/jennatauro/rotten-tomatoes.git</string>
+		<key>CE445FF7-C2A9-47D7-9F82-F4CA8DFA6D38</key>
+		<string>https://github.com/jennatauro/rotten-tomatoes-ios.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>RottenTomatoesBootcamp.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>8FC4F327-09CA-44DD-A5A0-2F081CBBFACA</key>
+		<string>../../../../AndroidStudioProjects/RottenTomatoesApplication</string>
+		<key>CE445FF7-C2A9-47D7-9F82-F4CA8DFA6D38</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/jennatauro/rotten-tomatoes-ios.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CE445FF7-C2A9-47D7-9F82-F4CA8DFA6D38</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8FC4F327-09CA-44DD-A5A0-2F081CBBFACA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>RottenTomatoesApplication</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CE445FF7-C2A9-47D7-9F82-F4CA8DFA6D38</string>
+			<key>IDESourceControlWCCName</key>
+			<string>RottenTomatoesBootcamp</string>
+		</dict>
+	</array>
+</dict>
+</plist>

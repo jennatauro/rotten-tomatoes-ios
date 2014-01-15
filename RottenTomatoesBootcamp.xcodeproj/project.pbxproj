@@ -150,10 +150,10 @@
 				6D8F361E1885D6B300C8AD4C /* RottenCommunicator.m */,
 				6D8F35F318859D4D00C8AD4C /* MasterViewController.h */,
 				6D8F35F418859D4D00C8AD4C /* MasterViewController.m */,
-				6D8F36161885CBC400C8AD4C /* DetailCell.h */,
-				6D8F36171885CBC400C8AD4C /* DetailCell.m */,
 				6D8F35F618859D4D00C8AD4C /* DetailViewController.h */,
 				6D8F35F718859D4D00C8AD4C /* DetailViewController.m */,
+				6D8F36161885CBC400C8AD4C /* DetailCell.h */,
+				6D8F36171885CBC400C8AD4C /* DetailCell.m */,
 				6D8F35F918859D4D00C8AD4C /* Images.xcassets */,
 				6D8F35E518859D4D00C8AD4C /* Supporting Files */,
 			);

@@ -7,6 +7,7 @@
 //
 
 #import "MasterViewController.h"
+#import "DetailViewController.h"
 
 #import "DetailCell.h"
 #import "Movie.h"
@@ -75,6 +76,16 @@
     cell.imageView.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:movie.imageUrl]]];
     
     return cell;
+}
+
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if([[segue identifier] isEqualToString:@"showDetail"]){
+        
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        Movie *movie = _movies[indexPath.row];
+        [[segue destinationViewController] setDetailItem:movie.movietitle];
+    }
 }
 
 
