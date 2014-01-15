@@ -32,6 +32,8 @@
         
         
         [movie setMovietitle:[movieDic objectForKey:@"title"]];
+        [movie setImageUrl:[(NSDictionary*)[movieDic objectForKey:@"posters"] objectForKey:@"detailed"]];
+        //[movie setImageUrl:[movieDic objectForKey:@"posters"]];
         [movies addObject:movie];
     }
     

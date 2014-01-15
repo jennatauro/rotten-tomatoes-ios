@@ -11,5 +11,6 @@
 @interface Movie : NSObject
 
 @property (strong, nonatomic) NSString *movietitle;
+@property (strong, nonatomic) NSString *imageUrl;
 
 @end
