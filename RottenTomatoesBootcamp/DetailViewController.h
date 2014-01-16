@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DetailViewController : UIViewController
+@interface DetailViewController : UIViewController{
+    IBOutlet UIScrollView *Scroller;
+}
 
 @property (strong, nonatomic) id detailItem;
 

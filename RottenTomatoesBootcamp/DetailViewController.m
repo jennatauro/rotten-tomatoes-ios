@@ -54,7 +54,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    //self.navigationItem.title = @"Movie Title Goes Here";
+    [Scroller setScrollEnabled:YES];
+    [Scroller setContentSize:CGSizeMake(320, 1000)];
     
     [self configureView];
 }
