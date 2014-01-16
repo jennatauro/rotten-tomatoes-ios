@@ -12,7 +12,9 @@
 
 @property (strong, nonatomic) id detailItem;
 
--(void)method2:(id)detailItem;
+-(void)setDetailItem:(id)detailItem andDetailImage:(id)detailImage;
+
+-(void)setDetailTitle:(id)detailTitle;
 
 @property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
 @end

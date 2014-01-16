@@ -20,30 +20,23 @@
 
 #pragma mark - Managing the detail item
 
-- (void)setDetailItem:(id)newDetailItem
+- (void)setDetailItem:(id)newDetailItem andDetailImage:(id)newDetailImage
 {
-//    if (_detailItem != newDetailItem) {
-//        _detailItem = newDetailItem;
-//        
-//        // Update the view.
-//        [self configureView];
-//    }
-    self.navigationItem.title = newDetailItem;
-}
-
-- (void)method2:(id)blah
-{
-    //_detailItem = blah;
+    _detailItem = newDetailItem;
     
     UIImageView *imageHolder = [[UIImageView alloc] initWithFrame:CGRectMake(10, 80, 150, 250)];
-    UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:blah]]];
+    UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:newDetailImage]]];
     imageHolder.image = image;
     
     [self.view addSubview:imageHolder];
     
     // Update the view.
     //[self configureView]; //this just puts the url string on the screen
+}
 
+- (void)setDetailTitle:(id)newDetailTitle
+{
+  self.navigationItem.title = newDetailTitle;
 }
 
 

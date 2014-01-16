@@ -84,9 +84,8 @@
         
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         Movie *movie = _movies[indexPath.row];
-        [[segue destinationViewController] setDetailItem:movie.movietitle];
-        
-        [[segue destinationViewController] method2:movie.imageUrl];
+        [[segue destinationViewController] setDetailItem:@"yoo" andDetailImage:movie.imageUrl];
+        [[segue destinationViewController] setDetailTitle:movie.movietitle];
     }
 }
 
