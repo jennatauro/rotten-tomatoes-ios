@@ -22,12 +22,13 @@
 
 - (void)setDetailItem:(id)newDetailItem
 {
-    if (_detailItem != newDetailItem) {
-        _detailItem = newDetailItem;
-        
-        // Update the view.
-        [self configureView];
-    }
+//    if (_detailItem != newDetailItem) {
+//        _detailItem = newDetailItem;
+//        
+//        // Update the view.
+//        [self configureView];
+//    }
+    self.navigationItem.title = newDetailItem;
 }
 
 - (void)configureView
