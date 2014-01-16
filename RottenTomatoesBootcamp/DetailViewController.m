@@ -35,7 +35,7 @@
 {
     //_detailItem = blah;
     
-    UIImageView *imageHolder = [[UIImageView alloc] initWithFrame:CGRectMake(40, 200, 280, 192)];
+    UIImageView *imageHolder = [[UIImageView alloc] initWithFrame:CGRectMake(10, 80, 150, 250)];
     UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:blah]]];
     imageHolder.image = image;
     
