@@ -23,6 +23,7 @@
 - (void)setDetailItem:(id)newDetailItem andDetailImage:(id)newDetailImage
 {
     _detailItem = newDetailItem;
+    //[_detailItem sizeToFit];
     
     UIImageView *imageHolder = [[UIImageView alloc] initWithFrame:CGRectMake(10, 80, 150, 250)];
     UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:newDetailImage]]];
