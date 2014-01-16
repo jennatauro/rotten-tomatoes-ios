@@ -31,6 +31,22 @@
     self.navigationItem.title = newDetailItem;
 }
 
+- (void)method2:(id)blah
+{
+    //_detailItem = blah;
+    
+    UIImageView *imageHolder = [[UIImageView alloc] initWithFrame:CGRectMake(40, 200, 280, 192)];
+    UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:blah]]];
+    imageHolder.image = image;
+    
+    [self.view addSubview:imageHolder];
+    
+    // Update the view.
+    //[self configureView]; //this just puts the url string on the screen
+
+}
+
+
 - (void)configureView
 {
     // Update the user interface for the detail item.
