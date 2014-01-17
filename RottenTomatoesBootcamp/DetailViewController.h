@@ -10,8 +10,6 @@
 
 @interface DetailViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UIScrollView *DetailScrollView;
-
 @property (strong, nonatomic) id detailItem;
 
 -(void)setDetailItem:(id)detailItem andDetailImage:(id)detailImage;
