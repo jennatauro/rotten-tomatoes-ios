@@ -54,9 +54,6 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    [Scroller setScrollEnabled:YES];
-    [Scroller setContentSize:CGSizeMake(320, 1000)];
-    
     [self configureView];
 }
 
