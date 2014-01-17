@@ -9,13 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface DetailViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIScrollView *DetailScrollView;
 
-@property (strong, nonatomic) id detailItem;
-
--(void)setDetailItem:(id)detailItem andDetailImage:(id)detailImage;
-
--(void)setDetailTitle:(id)detailTitle;
+@property (strong, nonatomic) NSString *detailImageUrl;
+@property (strong, nonatomic) NSString *detailMovieTitle;
 
 
-@property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
 @end

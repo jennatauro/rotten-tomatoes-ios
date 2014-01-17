@@ -78,16 +78,20 @@
     return cell;
 }
 
+
 -(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if([[segue identifier] isEqualToString:@"showDetail"]){
         
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         Movie *movie = _movies[indexPath.row];
-        [[segue destinationViewController] setDetailItem:movie.synopsis andDetailImage:movie.imageUrl];
-        [[segue destinationViewController] setDetailTitle:movie.movietitle];
+//        [[segue destinationViewController] setDetailItem:movie.synopsis andDetailImage:movie.imageUrl];
+//        [[segue destinationViewController] setDetailTitle:movie.movietitle];
+        [[segue destinationViewController] setDetailImageUrl:movie.imageUrl];
+        [[segue destinationViewController] setDetailMovieTitle:movie.movietitle];
     }
 }
+
 
 
 @end

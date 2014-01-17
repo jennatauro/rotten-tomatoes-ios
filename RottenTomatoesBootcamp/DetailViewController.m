@@ -14,28 +14,27 @@
 
 @interface DetailViewController ()
 - (void)configureView;
+- (void)putStuffInDetailScrollView:(NSString *)detailImageUrl andTitle:(NSString *)detailTitle;
 @end
 
 @implementation DetailViewController
 
+
 #pragma mark - Managing the detail item
 
-
-- (void)setDetailItem:(id)newDetailItem andDetailImage:(id)newDetailImage
+-(void)putStuffInDetailScrollView:(NSString *)detailImageUrl andTitle:(NSString *)detailTitle
 {
-    _detailItem = newDetailItem;
+    [self.DetailScrollView setContentSize:CGSizeMake(self.DetailScrollView.frame.size.width, 700)];
     
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(10, 80, 150, 250)];
-    UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:newDetailImage]]];
+    UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:detailImageUrl]]];
     imageView.image = image;
     
-    [self.view addSubview:imageView];
+    [self.DetailScrollView addSubview:imageView];
     
-}
-
-- (void)setDetailTitle:(id)newDetailTitle
-{
-  self.navigationItem.title = newDetailTitle;
+    [self.view addSubview:self.DetailScrollView];
+    
+    self.navigationItem.title = detailTitle;
 }
 
 
@@ -43,16 +42,14 @@
 {
     // Update the user interface for the detail item.
 
-    if (self.detailItem) {
-        self.detailDescriptionLabel.text = [self.detailItem description];
-    }
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-
+    
+    [self putStuffInDetailScrollView:self.detailImageUrl andTitle:self.detailMovieTitle];
     
     [self configureView];
 }
