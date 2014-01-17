@@ -20,18 +20,11 @@
 
 #pragma mark - Managing the detail item
 
+
 - (void)setDetailItem:(id)newDetailItem andDetailImage:(id)newDetailImage
 {
     _detailItem = newDetailItem;
     
-    UIImageView *imageHolder = [[UIImageView alloc] initWithFrame:CGRectMake(10, 80, 150, 250)];
-    UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:newDetailImage]]];
-    imageHolder.image = image;
-    
-    [self.view addSubview:imageHolder];
-    
-    // Update the view.
-    //[self configureView]; //this just puts the url string on the screen
 }
 
 - (void)setDetailTitle:(id)newDetailTitle
@@ -53,6 +46,12 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    self.DetailScrollView.contentSize = CGSizeMake(960, 200);
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(10, 80, 150, 250)];
+    UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://libertyunyielding.com/wp-content/uploads/2013/10/puppy1.jpg"]]];
+    imageView.image = image;
+    [self.DetailScrollView addSubview:imageView];
     
     [self configureView];
 }
