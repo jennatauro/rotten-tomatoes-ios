@@ -89,6 +89,7 @@
 //        [[segue destinationViewController] setDetailTitle:movie.movietitle];
         [[segue destinationViewController] setDetailImageUrl:movie.imageUrl];
         [[segue destinationViewController] setDetailMovieTitle:movie.movietitle];
+        [[segue destinationViewController] setDetailSynopsis:movie.synopsis];
     }
 }
 

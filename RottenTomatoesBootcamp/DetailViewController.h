@@ -13,6 +13,7 @@
 
 @property (strong, nonatomic) NSString *detailImageUrl;
 @property (strong, nonatomic) NSString *detailMovieTitle;
+@property (strong, nonatomic) NSString *detailSynopsis;
 
 
 @end
