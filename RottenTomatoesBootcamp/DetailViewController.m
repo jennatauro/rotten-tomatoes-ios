@@ -24,8 +24,6 @@
 
 -(void)putStuffInDetailScrollView:(NSString *)detailImageUrl andTitle:(NSString *)detailTitle andSyn:(NSString *)detailSynopsis
 {
-    //set scrollview
-    [self.DetailScrollView setContentSize:CGSizeMake(self.DetailScrollView.frame.size.width, 700)];
     
     //setimageview
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(10, 10, 150, 250)];
@@ -44,6 +42,11 @@
     SynopsisLabel.text=detailSynopsis;
     [SynopsisLabel setNumberOfLines:0];
     [SynopsisLabel sizeToFit];
+    NSLog(@"Height: %f", SynopsisLabel.bounds.size.height);
+    
+    //set scrollview
+    [self.DetailScrollView setContentSize:CGSizeMake(self.DetailScrollView.frame.size.width, SynopsisLabel.bounds.size.height+360)];
+    
     [self.DetailScrollView addSubview:SynopsisLabel];
     
     
